@@ -5,11 +5,9 @@ $(function (){
         if(verifica == trocacss){
             verifica = "./css/estilo-novo.css";
             $("#mudaestilo").attr("href",verifica);
-            teste = Cookies.set("alertaoff","true");
         }
         else
             $("#mudaestilo").attr("href",trocacss);
-            teste = Cookies.set("alertaoff","false");
         return false;
     })})
     function myFunction() {
