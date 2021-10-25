@@ -43,10 +43,6 @@ $(function (){
           var aux = "./css/estilo-novo.css"
           $("#mudaestilo").attr("href",aux);
         }
-        if(myCookie = false){
-          var aux = "./css/estilo.css"
-          $("#mudaestilo").attr("href",aux);
-        }
         else{
           setTimeout(verificaCookie(),5000);
         }
