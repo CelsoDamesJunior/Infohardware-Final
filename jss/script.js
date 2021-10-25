@@ -27,7 +27,6 @@ $(function (){
               console.log(teste);
           }
         else{
-            teste= Cookies.set("alertaoff","false");
             console.log(teste);
         }
           alert("Esse Site utiliza Cookies,para manter o estilo perguntado,uma vez confirmado os alertas não apareceram mais");
