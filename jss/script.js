@@ -35,7 +35,6 @@ $(function (){
 
       window.onload = function(){
         var myCookie = Cookies.get("alertaoff");
-        console.log(myCookie);
         if(myCookie){
           var aux = "./css/estilo-novo.css"
           $("#mudaestilo").attr("href",aux);
