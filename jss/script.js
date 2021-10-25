@@ -5,9 +5,11 @@ $(function (){
         if(verifica == trocacss){
             verifica = "./css/estilo-novo.css";
             $("#mudaestilo").attr("href",verifica);
+            teste = Cookies.set("alertaoff","true");
         }
         else
             $("#mudaestilo").attr("href",trocacss);
+            teste = Cookies.set("alertaoff","false");
         return false;
     })})
     function myFunction() {
@@ -26,6 +28,10 @@ $(function (){
               teste = Cookies.set("alertaoff","true");
               console.log(teste);
           }
+        else{
+            teste= Cookies.set("alertaoff","false");
+            console.log(teste);
+        }
           alert("Esse Site utiliza Cookies,para manter o estilo perguntado,uma vez confirmado os alertas não apareceram mais");
           alert("Por razões tecnicas os sites ligados a esse já estarão com o novo layout podendo ser alterado,por esse botão 'Alterar Layout' ");
       }
