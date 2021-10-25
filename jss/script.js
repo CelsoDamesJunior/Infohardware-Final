@@ -23,10 +23,10 @@ $(function (){
         if(trocaestilo == true){
           var trocacss = "./css/estilo-novo.css";
               $("#mudaestilo").attr("href",trocacss);
+              teste = Cookies.set("alertaoff","true");
+              console.log(teste);
           }
-          alert("Esse Site utiliza Cookies, ao clicar para troca de layout, os alertas não apareceram mais");
-          teste = Cookies.set("alertaoff","true");
-          console.log(teste);
+          alert("Esse Site utiliza Cookies,para manter o estilo perguntado,uma vez confirmado os alertas não apareceram mais");
           alert("Por razões tecnicas os sites ligados a esse já estarão com o novo layout podendo ser alterado,por esse botão 'Alterar Layout' ");
       }
 
